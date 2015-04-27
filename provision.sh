@@ -12,7 +12,7 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again p
 echo ">>> Installing Base Items"
  
 # Install base items
-sudo apt-get install -y vim curl wget build-essential python-software-properties
+sudo apt-get install -y vim curl wget build-essential python-software-properties unzip
  
 echo ">>> Adding PPA's and Installing Server Items"
  
