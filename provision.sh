@@ -30,7 +30,7 @@ echo ">>> Configuring Server"
  
 # Apache Config
 sudo a2enmod rewrite
-wget -O /usr/local/bin/vhost https://gist.githubusercontent.com/fideloper/2710970/raw/5d7efd74628a1e3261707056604c99d7747fe37d/vhost.sh
+sudo wget -O /usr/local/bin/vhost https://gist.githubusercontent.com/fideloper/2710970/raw/5d7efd74628a1e3261707056604c99d7747fe37d/vhost.sh
 sudo chmod guo+x /usr/local/bin/vhost
 
 # Configure Apache to run as vagrant
@@ -74,12 +74,7 @@ sudo mv composer.phar /usr/local/bin/composer
 rm -rf /var/www
 ln -fs /vagrant_data /var/www
 
-echo ">>> Installing Scripts"
-wget -O /usr/local/bin/wpdl https://gist.githubusercontent.com/beardedinbinary/265ae9f24ac09749a1f2/raw/2f2d586d8011bbb373c4be7f6a594da22e3643c5/wpdl.wp
-sudo chmod guo+x /usr/local/bin/wpdl
-
-wget -O /usr/local/bin/wp-install https://gist.githubusercontent.com/beardedinbinary/79d7ad34f9980f0a4c23/raw/9baa505cb6dbf29a3b15eb96f2a4a7220322883d/wp-install.sh
-sudo chmod guo+x /usr/local/bin/wp-install
+echo ">>> You're all set! Get to developin'!!"
 
 
 
